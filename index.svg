@@ -1,0 +1,43 @@
+<!--<!doctype svg>-->
+<!-- Primary colour #FFFFFF, Secondary colour #5AB738 -->
+<!--
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="mainStyle.css"/>
+	</head>
+	<body>
+		<svg>
+			<polygon points="0,32 512,32 480,64 0,64" style="fill:#5AB738"/>
+			<polygon points="528,32 244,32 512,64 528,64" style="fill:#5AB738"/>
+		</svg>
+		<canvas id="gameCanvas">
+			Your browser does not support the canvas element.
+		</canvas>
+	</body>
+</html>
+-->
+<svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<g id="stripContainer" style="fill:#5AB738">
+		<polygon points="0,32 512,32 480,64 0,64"/>
+		<a id="endContainer" xlink:href="#" style="fill:inherit">
+			<polygon points="528,32 544,32 512,64 496,64"/>
+		</a>
+	</g>
+	<text x="32" y="54" font-size="16" text-anchor="start" font-family="Calibri" fill="#FFFFFF">
+		A GREAT PAGE FOR GREAT THINGS
+	</text>
+	<script>
+		var end = document.getElementById("endContainer");
+		var cycle = 0;
+		end.addEventListener("click", function(e){
+			cycle++;
+			cycle %= 3;
+			if(cycle == 0)
+				document.getElementById("stripContainer").style.fill = "#5AB738";
+			if(cycle == 1)
+				document.getElementById("stripContainer").style.fill = "#B7385A";
+			if(cycle == 2)
+				document.getElementById("stripContainer").style.fill = "#385AB7";
+		});
+	</script>
+</svg>
