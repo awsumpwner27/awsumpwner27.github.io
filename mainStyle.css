@@ -1,5 +1,44 @@
 body {
 	margin: 0;
-	background-image: url("noise1.png");
-	background-repeat: repeat;
+}
+
+#topBarContainer{
+	position: absolute;
+	top: 68px;
+	left: 82px;
+
+	margin: 0;
+	padding: 0;
+
+	height: 32px;
+	width: calc(100% - 82px);
+
+	background-color: #3F5AB7;
+	color: #FFFFFF;
+
+	font: 16px "Calibri", sans-serif;
+}
+
+#topBarContainer > a {
+	display: inline-block;
+
+	height: 24px;
+
+	margin: 0 -2px;
+	padding: 8px 8px 0 8px;
+
+	border-left: 1px solid #FFFFFF;
+	border-right: 1px solid #FFFFFF;
+
+	font: inherit;
+	text-decoration: none;
+	color: inherit;
+}
+
+#topBarContainer > a:last-child {
+	border-right-width: 2px;
+}
+
+#topBarContainer > a:hover {
+	background-color: #4F6AC7;
 }
