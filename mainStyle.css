@@ -5,18 +5,18 @@ body {
 #topBarContainer{
 	position: absolute;
 	top: 68px;
-	left: 82px;
+	left: 83px;
 
 	margin: 0;
-	padding: 0;
+	padding: 0 0 0 6px;
 
 	height: 32px;
-	width: calc(100% - 82px);
+	width: calc(100% - 89px);
 
 	background-color: #3F5AB7;
 	color: #FFFFFF;
 
-	font: 16px "Calibri", sans-serif;
+	font: 20px "Trebuchet MS", sans-serif;
 }
 
 #topBarContainer > a {
@@ -24,19 +24,16 @@ body {
 
 	height: 24px;
 
-	margin: 0 -2px;
-	padding: 8px 8px 0 8px;
+	margin: 0 0 0 -6px;
+	padding: 8px 14px 0 2px;
 
-	border-left: 1px solid #FFFFFF;
-	border-right: 1px solid #FFFFFF;
+	border-right: 3px solid #FFFFFF;
 
 	font: inherit;
 	text-decoration: none;
 	color: inherit;
-}
 
-#topBarContainer > a:last-child {
-	border-right-width: 2px;
+	background-color: inherit;
 }
 
 #topBarContainer > a:hover {

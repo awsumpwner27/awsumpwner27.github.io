@@ -1,0 +1,44 @@
+body {
+	margin: 2mm;
+	background-color: #8FAFBF;
+}
+
+#logoContainer {
+	display: inline-block;
+	width: 16mm;
+	height: 16mm;
+}
+
+#logo {
+	height: 100%;
+	width: 100%;
+}
+
+#topBarContainer {
+	display: inline;
+	margin-right: 0;
+}
+
+#topBarSeriesContainer {
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+}
+
+#topBarSeriesContainer > span {
+	display: inline-block;
+	height: 4mm;
+	margin: 1mm 0 1mm 0;
+	border-left: 1px solid white;
+	padding: 0 2mm 0 2mm;
+
+	color: white;
+	font: 8pt "Arial", sans-serif;
+}
+#topBarSeriesContainer :first-child {
+	border-radius: 8px 0 0 8px;
+}
+#topBarSeriesContainer :last-child {
+	border-right: 1px solid white;
+	border-radius: 0 8px 8px 0;
+}
