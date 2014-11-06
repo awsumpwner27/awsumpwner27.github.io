@@ -1,0 +1,45 @@
+body {
+	margin: 0;
+	background-color: #8FAFBF;
+}
+
+#logoContainer {
+	display: inline-block;
+	width: 30%;
+}
+
+#logo {
+	height: 0;
+	padding-bottom: 100%;
+	overflow: hidden;
+}
+
+#topBarContainer {
+	display: inline;
+	text-align: center;
+}
+
+#topBarSeriesContainer {
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+	width: 70%;
+}
+
+#topBarSeriesContainer > span {
+	display: inline-block;
+	height: 25%;
+	margin: 0 0 0 2%;
+	border-left: 4px solid white;
+	padding: 0 2.5% 0 2.5%;
+
+	color: white;
+	font: 32pt "Arial", sans-serif;
+}
+#topBarSeriesContainer :first-child {
+	border-radius: 16px 0 0 16px;
+}
+#topBarSeriesContainer :last-child {
+	border-right: 4px solid white;
+	border-radius: 0 16px 16px 0;
+}

@@ -1,6 +1,6 @@
 var logo = document.getElementById("logo");
-var w = logo.offsetWidth;
-var h = logo.offsetHeight;
+var w = logo.clientWidth;
+var h = logo.clientHeight;
 
 var date = new Date();
 
@@ -28,6 +28,8 @@ logo.appendChild(line1);
 logo.appendChild(line2);
 
 window.setInterval(function(){
+	w = logo.clientWidth;
+	h = logo.clientHeight;
 	var date = new Date();
 	line1.setAttribute("x2", String(w / 2 + Math.min(w, h) * 3/4 * 1/2 * Math.cos(2 * Math.PI * date.getSeconds() / 60 - 1/2 * Math.PI)));
 	line1.setAttribute("y2", String(h / 2 + Math.min(w, h) * 3/4 * 1/2 * Math.sin(2 * Math.PI * date.getSeconds() / 60 - 1/2 * Math.PI)));
